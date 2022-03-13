@@ -1,0 +1,120 @@
+
+
+/**
+HEADER SECTION START
+**/
+.navbar-light .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-toggler{
+    border: none;
+    
+}
+
+.navbar-expand-lg .navbar-toggler {
+    display: block;
+}
+a.navbar-brand {
+    width: 200px;
+}
+.nav-scroller.text-center {
+    padding: 15px 0;
+}
+.background-img-content.d-flex.justify-content-center.align-items-center {
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.btn-gold{
+    color: #000000;
+    background-color: #D5B375;
+    border-color: #D5B375;
+    padding: 22px 64px;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 500;
+}
+
+/**
+NAV SECTION START
+**/
+.rounded-circle {
+    width: 70%;
+    padding: 12px;
+    border-color: #ffffff;
+    margin: 0 auto;
+}
+.icon-box-content a {
+    color: #ffffff;
+    
+}
+.inner-content h1 {
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+.inner-content p {
+    color: #D5B375;
+    font-size: 18px;
+    line-height: 1.4;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+.background-img-content.d-flex.justify-content-center.align-items-center {
+    position: relative;
+    margin-bottom: 50px;
+}
+a.rotate-text {
+    transform: rotate(90deg);
+    position: fixed;
+    right: -17px;
+    bottom: 48vh;
+    margin-bottom: 0px;
+    color: #ffffff;
+    background-color: #D5B375;
+    padding: 0 5px;
+    text-decoration: none;
+    font-weight: 600;
+    z-index: 1;
+}
+.bg-color{
+    background-color: #D5B375;
+}
+.customize .pb-sm-5{
+    padding-bottom: 2rem !important;
+}
+ul.list-inline {
+    margin-bottom: 0;
+}
+/**
+NAV SECTION END
+**/
+/**
+HEADER SECTION END
+**/
+.white-bg {
+    background-color: #ffffff;
+}
+.customize .w-30 {
+    width: 55%;
+}
+p.d-inline-block.w-30 {
+    border-bottom: 1px solid #D5B375;
+}
+.customize.row.col-4.text-center.justify-content-center.gy-5 {
+    width: 25%;
+}
+.customize h4 {
+    font-size: 18px;
+    line-height: 1.2;
+}
+.customize.row.col-4.text-center.justify-content-center {
+    width: 27%;
+    row-gap: 52px;
+}
+p.d-inline-block.w-30.pb-3.ps-0.pe-0.align-top.pb-sm-5 {
+    height: 25%;
+}
+main.main-section h3 {
+    color: #D5B375;
+}
