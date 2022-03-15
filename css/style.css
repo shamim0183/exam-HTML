@@ -7,7 +7,7 @@ img{
 a{
     text-decoration: none;
 }
-.black-bg a,h2,p{
+.black-bg a, .black-bg  h2, .black-bg  p{
     color: #ffffff;
 }
 /**
@@ -81,7 +81,7 @@ NAV SECTION START
 a.rotate-text {
     transform: rotate(90deg);
     position: fixed;
-    right: -17px;
+    right: -16px;
     bottom: 48vh;
     margin-bottom: 0px;
     color: #ffffff;
@@ -186,13 +186,13 @@ h4.title {
     margin-bottom: 80px;
 }
 
-label span {
+.c_type label span {
     text-align: center;
     display: block;
     padding-bottom: 25px;
     
 }
-label {
+.c_type label {
     border: 1px solid rgba(0, 0, 0, 0.3);
     box-sizing: border-box;
     border-radius: 8px;
@@ -212,7 +212,10 @@ label {
     flex-direction: column;
     justify-content: space-between;
 }
-input[type="radio"] {
+.chocolate-types input[type="radio"] {
+    float: right;
+}
+.chocolate-shape input[type="radio"] {
     float: right;
 }
 /* .chocolate-shape {
@@ -249,6 +252,8 @@ input[type="radio"] {
     font-size: 20px;
     line-height: 1.2;
     font-weight: 300;
+    color: #000000;
+    margin-bottom: 40px;
 }
 .chocolate-ingredients label {
     width: 30%;
@@ -266,15 +271,72 @@ input[type="radio"] {
     justify-content: space-between;
     
 }
-input[type="checkbox"] {
+.chocolate-ingredients input[type="checkbox"] {
     float: right;
 }
-.form-wizard-button {
-    float: right;
+.form-wizard-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.form-wizard-buttons a.btn-gold {
+    
+    margin-right: 45px;
+}
+.border-gold{
+    color: #000000;
+    background-color: #ffffff;
+    border: 2px solid #D5B375;
+    padding: 22px 64px;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 500;
+}
+.form-wizard-buttons a.border-gold {
+    float: left;
+    
 }
 .form-box {
     margin-bottom: 120px;
 }
+
+.yes-content {
+    margin-bottom: 100px;
+}
+.mb-370{
+    margin-bottom: 370px;
+}
+.individual-msg input[type="radio"] {
+    margin: 0 5px;
+}
+.individual-msg label {
+    margin-right: 10px;
+}
+.mb-60{
+    margin-bottom: 60px;
+}
+.select-pickup{
+    margin-bottom: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /**
 CUSTOMIZE SECTION END
@@ -284,18 +346,21 @@ FOOTER SECTION START
 **/
 footer.black-bg {
     background: #000000;
+    position: relative;
 }
 .footer-top {
     padding: 20px 0;
 }
 .footer-logo {
     width: 250px;
+    margin-bottom: 5px;
 }
 .wrap {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100%;
+    margin-top: 20px;
 }
 .btn-group-vertical {
     row-gap: 20px;
@@ -325,33 +390,38 @@ a.btn.btn-outline-secondary {
 }
 a.footer {
     bottom: 32vh;
+    position: absolute;
 }
-table th, td {
+.padding-all th, .padding-all td {
     padding: 10px 23px;
 }
-table th {
-    width: 55%;
+.padding-all th {
+    
     font-weight: normal;
 }
-table td {
+.padding-all td {
     font-weight: 500;
+    float: right;
 }
-tr.colorfull-bg {
+.padding-all tr.colorfull-bg {
     background: #EEE1C8;
     padding: 10px;
 }
-.col-sm-4.col-lg-4.price-padding {
+.col-lg-3.price-padding {
     position: fixed;
     right: 0;
-    bottom: 46vh;
-    
-    width: 18%;
-    
+    /* bottom: 46vh; */
+    min-width: 30%;
 }
+
 .price-border{
     background: #FBF7F1;
     border: 2px solid #EEE1C8;
     margin-bottom: 40px;
+    padding: 45px;
+}
+.price-border table{
+    width: 100%;
 }
 .contact-us {
     border: 2px solid #F3E8D6;
@@ -361,10 +431,14 @@ tr.colorfull-bg {
     text-align: center;
     font-size: 24px;
     line-height: 1.2;
+    background-color: #ffffff;
 }
 .contact-us a {
     color: #000000;
 }
+
+
+
 /**
 FOOTER SECTION END
 **/
