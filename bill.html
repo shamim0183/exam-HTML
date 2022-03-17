@@ -16,7 +16,7 @@
     <header class="configuration d-flex align-items-center pt-2 pb-2 ">
         <div class="container-fluid">
             <nav class="nav align-items-center justify-content-evenly">
-                <a class="navbar-brand" href="#"><img src="./image/L_House_of_Laederach_RGB-1536x500.png" alt="House_of_Laederach"></a>
+                <a class="navbar-brand" href="#"><img class="img-fluid" src="./image/L_House_of_Laederach_RGB-1536x500.png" alt="House_of_Laederach"></a>
               <a class="nav-link active" href="#">Configuration</a>
               <div class="icon cart-icon">
                   <a class="header-cart" href="#">
@@ -32,76 +32,87 @@
     </header>
     <form action="">
         <div class="container">
-            <div class="customize-table-responsive ">
-                <table class="table">
-                    <thead class="color-bg">
-                        <tr>
-                            <th>Product</th>
-                            <th></th>
-                            <th>price</th>
-                        </tr>
-                    </thead>
-                    <tbody class="table-cart-body">
-                        <tr>
-                            <th class="text-color">Chocolate:</th>
-                            <td >Milk</td>
-                            <td>CHF 10.00</td>    
-                        </tr>
-                        <tr>
-                            <th class="text-color">shape:</th>
-                            <td >Large heart</td>
-                            <td>CHF 10.00</td>    
-                        </tr>
-                        <tr>
-                            <th class="text-color">ingredients:</th>
-                            <td >Caramelised hazelnut, crunchy cornflakes & fruity cranberries</td>
-                            <td>CHF 10.00</td>    
-                        </tr>
-                        <tr>
-                            <th class="text-color">labelling:</th>
-                            <td >Large Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
-                            <td>CHF 10.00</td>    
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="customize-table-responsive mb-40  ">
+                        <table class="table table-responsive-sm">
+                            <thead class="table-cart-heading ">
+                                <tr>
+                                    <th>Product</th>
+                                    <th></th>
+                                    <th>Price</th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-cart-body">
+                                <tr>
+                                    <th class="text-color">Chocolate:</th>
+                                    <td >Milk</td>
+                                    <td>CHF 10.00</td>    
+                                </tr>
+                                <tr>
+                                    <th class="text-color">Shape:</th>
+                                    <td >Large heart</td>
+                                    <td>CHF 10.00</td>    
+                                </tr>
+                                <tr>
+                                    <th class="text-color">Ingredients:</th>
+                                    <td >Caramelised hazelnut, crunchy cornflakes & fruity cranberries</td>
+                                    <td>CHF 10.00</td>    
+                                </tr>
+                                <tr>
+                                    <th class="text-color">Labelling:</th>
+                                    <td >Large Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+                                    <td>CHF 10.00</td>    
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+    
+                </div>
+
             </div>
             <div class="row ">
-                <div class="apply-cupon row col-sm-12 col-md-6 col-lg-4">
+                <div class="col-sm-12 col-md-4 col-lg-5">
                     <div class="row">
-                        <div class="cupon-input col-sm-6 col-md-6  align-items-center">
-                            <input type="text" name="cupon" id="" placeholder="coupon code">
+                        <div class=" col-sm-12 col-md-12 col-lg-12 ">
+                            <div class=" d-flex mb-4">
+                                
+                                <input type="text" class="form-control p-sm-o  p-3  me-4" name="cupon" id="" placeholder="coupon code">
+                                <a href="" class="btn btn-apply">Apply</a></div>
                         </div>
-                        <div class="apply-button col-sm-6 col-md-6 ">
-                            <a href="" class="btn btn-primary">Apply</a>
-                        </div>
-
                     </div>
 
                 </div>
-                <div class="total-price-table col-sm-12 col-md-6 col-lg-8">
-                    <table class="total-price">
-                        <tr>
-                            <th>Subtotal</th>
-                            <td>CHF 40.00</td>
-                        </tr>
-                        <tr>
-                            <th>Delivery Fee</th>
-                            <td>CHF 20.0</td>
-                        </tr>
-                        <tr>
-                            <th>total</th>
-                            <td>CHF 60.00</td>
-                        </tr>
-                    </table>
-                    <div class="form-wizard-buttons">
-                        <a class="btn btn-primary" href="#" role="button"> <span>
-                            <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M6.70994 2.12002L2.82994 6.00002L6.70994 9.88002C7.09994 10.27 7.09994 10.9 6.70994 11.29C6.31994 11.68 5.68994 11.68 5.29994 11.29L0.709941 6.70002C0.319941 6.31002 0.319941 5.68002 0.709941 5.29002L5.29994 0.700021C5.68994 0.310021 6.31994 0.310021 6.70994 0.700021C7.08994 1.09002 7.09994 1.73002 6.70994 2.12002Z" fill="black"/>
-                            </svg>    
-                            </span>Previous Step
-                        </a>
-                        <a class="btn btn-primary" href="#" role="button">Proceed To checkout  </a>
-                    </div> 
+                <div class="col-sm-12 col-md-8 col-lg-7 ">
+                    <div class="total-ammount mb-4">
+                        <div class="total-price mb-100">
+                            <table class="price-table-padding" >
+                                
+                                    <tr>
+                                        <th>Subtotal</th>
+                                        <td>CHF 40.00</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Delivery Fee</th>
+                                        <td>CHF 20.0</td>
+                                    </tr>
+                                    <tr>
+                                        <th>total</th>
+                                        <td>CHF 60.00</td>
+                                    </tr>
+                                
+                            </table>
+                        </div>
+                        <div class="form-wizard-buttons">
+                            <a class="btn btn-previous" href="#" role="button"> <span>
+                                <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.70994 2.12002L2.82994 6.00002L6.70994 9.88002C7.09994 10.27 7.09994 10.9 6.70994 11.29C6.31994 11.68 5.68994 11.68 5.29994 11.29L0.709941 6.70002C0.319941 6.31002 0.319941 5.68002 0.709941 5.29002L5.29994 0.700021C5.68994 0.310021 6.31994 0.310021 6.70994 0.700021C7.08994 1.09002 7.09994 1.73002 6.70994 2.12002Z" fill="black"/>
+                                </svg>    
+                                </span>Previous Step
+                            </a>
+                            <a class="btn btn-apply" href="#" role="button">Proceed To checkout  </a>
+                        </div> 
+                    </div>
 
                 </div>
             </div>
@@ -113,7 +124,7 @@
                 <div class="row">
                     <div class="col-sm-12 col-md-4 col-lg-4 mb-3 ">
                         <div class="footer-logo">
-                            <a class="footer-brand" href="#"><img src="./image/L_House_of_Laederach_RGB 1.png" alt="House_of_Laederach"></a>
+                            <a class="footer-brand" href="#"><img class="img-fluid" src="./image/L_House_of_Laederach_RGB 1.png" alt="House_of_Laederach"></a>
 
                         </div>
                         <h2>Besuchen Sie uns:</h2>
