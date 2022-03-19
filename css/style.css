@@ -349,6 +349,12 @@ h4.title {
     flex-direction: column;
     justify-content: space-between;
 }
+.focus-color{
+    position: relative;
+}
+.focus-color:focus-within{
+    outline: 4px solid #D5B375;
+}
 .chocolate-types span{
     width: 100%;
     float: left;
@@ -357,10 +363,72 @@ h4.title {
 }
 .chocolate-types input[type="radio"] {
     float: right;
+    
+}
+.chocolate-types input[type="radio"]:checked:after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: #d5b375;
+    border-radius: 100%;
+    position: absolute;
+}
+.chocolate-types input[type="radio"]:checked:before {
+    content: "";
+    position: absolute;
+    right: 13px;
+    top: 16px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #d5b375;
+    border-radius: 100%;
+    background: #fff;
 }
 .chocolate-shape input[type="radio"] {
     float: right;
 }
+.chocolate-shape input[type="radio"]:checked:after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: #d5b375;
+    border-radius: 100%;
+    position: absolute;
+}
+.chocolate-shape input[type="radio"]:checked:before {
+    content: "";
+    position: absolute;
+    right: 13px;
+    top: 16px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #d5b375;
+    border-radius: 100%;
+    background: #fff;
+}
+
+.gold-border{
+    position: relative;
+}
+.gold-border input[type="radio"]:checked:after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: #d5b375;
+    border-radius: 100%;
+    position: absolute;
+}
+/* .gold-border input[type="radio"]:checked:before{
+    content: "";
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #d5b375;
+    border-radius: 100%;
+    background: #fff;
+} */
 /* .chocolate-shape {
     display: flex;
     justify-content: space-between;
@@ -424,6 +492,30 @@ h4.title {
 }
 .chocolate-ingredients input[type="checkbox"] {
     float: right;
+}
+.chocolate-ingredients input[type="checkbox"]:checked:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 16px;
+    right: 19px;
+    width: 6px;
+    height: 14px;
+    border: solid #d5b375;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg) !important;
+}
+.chocolate-ingredients input[type="checkbox"]:checked:before {
+    content: "";
+    position: absolute;
+    right: 13px;
+    top: 16px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #d5b375;
+    background: #fff;
+
+   
 }
 .form-wizard-buttons {
     
@@ -530,7 +622,9 @@ p.dynamic-image-details {
     
 }
 
-
+.custom-radio:focus + label:before {
+	box-shadow: 0 0 4px 1px rgba(0, 0, 0, 1);
+}
 
 
 
@@ -543,6 +637,27 @@ p.dynamic-image-details {
 /**
 CUSTOMIZE SECTION END
 **/
+/**
+BILL SECTION START
+**/
+.padding-small-device{
+    padding: 0 21px;
+}
+/**
+BILL SECTION END
+**/
+/**
+CHECKOUT SECTION START
+**/
+.paymen-lable label{
+    width: 28%;
+    text-align: center;
+    cursor: pointer;
+}
+/**
+CHECKOUT SECTION END
+**/
+
 /**
 FOOTER SECTION START
 **/
@@ -711,6 +826,37 @@ FOOTER SECTION END
     .confirm-order .confirm-order-shape label {
         width: 50%;
     }
+    .paymen-lable label{
+        width: 15%;
+        
+    }
+    .btn-apply {
+        font-size: 12px;
+        width: 145px;
+        height: fit-content;
+        padding: 8px 10px;
+        
+    }
+    .chocolate-ingredients input[type="checkbox"]:checked:after {
+       
+        top: 5px;
+        right: 11px;
+       
+    }
+    .chocolate-ingredients input[type="checkbox"]:checked:before {
+        
+        right: 5px;
+        top: 5px;
+       
+    }
+    .chocolate-types input[type="radio"]:checked:before {
+        right: 5px;
+        top: 4px;
+    }
+    .chocolate-shape input[type="radio"]:checked:before {
+        right: 5px;
+        top: 4px;
+    }
 }
 @media screen and (max-width: 768px){
     .chocolate-types label {
@@ -732,10 +878,7 @@ FOOTER SECTION END
         font-size: 14px;
         
     }
-    .price-contact{
-        position: relative;
-        
-    }
+    
     h4.title {
         font-size: 20px;
     }
@@ -751,6 +894,14 @@ FOOTER SECTION END
     .btn-width .btn-next{
         width: 100%;
     }
+    .paymen-lable label{
+        width: 20%;
+        
+    }
+    .padding-small-device{
+        padding: 0 21px;
+    }
+    
 }
 @media screen and (max-width: 420px){
     .chocolate-types label {
@@ -771,21 +922,18 @@ FOOTER SECTION END
         font-size: 14px;
        
     }
-    .price-contact{
-        position: relative;
-        
-    }
-    .btn-apply {
-        font-size: 12px;
-        width: 145px;
-        height: fit-content;
-        padding: 8px 10px;
-        
-    }
+   
+    
     .btn-width .btn-next{
         width: 100%;
     }
-    
+    .paymen-lable label{
+        width: 30%;
+        
+    }
+    .padding-small-device{
+        padding: 0 20px;
+    }
     
 }
 @media screen and (max-width: 375px){
@@ -811,10 +959,7 @@ FOOTER SECTION END
         font-size: 14px;
         
     }
-    .price-contact{
-        position: relative;
-        
-    }
+   
     
     .btn-previous {
         font-size: 12px;
@@ -833,13 +978,13 @@ FOOTER SECTION END
     .confirm-order .confirm-order-ingredients  label {
         width: 100%;
     }
-    .btn-apply {
-        font-size: 20px;
-       
-        padding: 8px 10px;
-        
-    }
+    
     .btn-width .btn-next{
         width: 100%;
     }
+    .paymen-lable label{
+        width: 30%;
+        
+    }
+    
 }
