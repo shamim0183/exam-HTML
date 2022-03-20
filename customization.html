@@ -89,21 +89,21 @@
                                                                 <label class="focus-color" >
                                                                 
                                                                     <input type="radio" name="c_type"  id="css"> 
-                                                                    <img class="img-fluid" src="./image/Laderach_Milchschokolade 1.jpg" alt="chocolate">
+                                                                    <img class="img-fluid img-responsive" src="./image/Laderach_Milchschokolade 1.jpg" alt="chocolate">
                                                                     <span>Milk chocolate</span>
                                                                 </label>
                                                             
                                                             
                                                                 <label  class="focus-color" >
                                                                     <input type="radio" name="c_type"  id="css">
-                                                                    <img class="img-fluid" src="./image/Laderach_Milchschokolade dark .jpg" alt="chocolate">
+                                                                    <img class="img-fluid img-responsive" src="./image/Laderach_Milchschokolade dark .jpg" alt="chocolate">
                                                                     <span>Dark chocolate</span>
                                                                 </label>
                                                             
                                                             
                                                                 <label  class="focus-color" >
                                                                     <input type="radio" name="c_type" id="css">
-                                                                    <img class="img-fluid" src="./image/Laderach_Milchschokolade white.jpg" alt="chocolate">
+                                                                    <img class="img-fluid img-responsive" src="./image/Laderach_Milchschokolade white.jpg" alt="chocolate">
                                                                     <span>White chocolate</span>
                                                                 </label>
                                                            
@@ -115,22 +115,22 @@
                                                         
                                                             <label class="focus-color" >
                                                                 <input type="radio"  name="c_type"  id="">
-                                                                <img class="img-fluid" src="./image/500g.png" alt="shape">
+                                                                <img class="img-fluid img-responsive" src="./image/500g.png" alt="shape">
                                                                 <span>Large heart for CHF 42.90 (ca. 25 x 25cm)</span>
                                                             </label>
                                                             <label class="focus-color" >
                                                                 <input type="radio"  name="c_type"  id="">
-                                                                <img class="img-fluid" src="./image/300g.png" alt="shape">
+                                                                <img class="img-fluid img-responsive" src="./image/300g.png" alt="shape">
                                                                 <span>Small heart for CHF 19.90 (ca. 15 x 18cm)</span>
                                                             </label>
                                                             <label class="focus-color" >
                                                                 <input type="radio"  name="c_type"  id="">
-                                                                <img class="img-fluid" src="./image/800g.png" alt="shape">
+                                                                <img class="img-fluid img-responsive" src="./image/800g.png" alt="shape">
                                                                 <span>Large plate for CHF 66.00 (ca. 28 x 33cm)</span>
                                                             </label>
                                                             <label class="focus-color" >
                                                                 <input type="radio"  name="c_type"  id="">
-                                                                <img class="img-fluid" src="./image/200g.png" alt="shape">
+                                                                <img class="img-fluid img-responsive" src="./image/200g.png" alt="shape">
                                                                 <span>Small plate for CHF 28.50 (ca. 12 x 23cm)</span>
                                                             </label>
 
@@ -193,15 +193,20 @@
                                                             </label>
                                                         </div>
                                                         
-                                                        <div class="form-wizard-buttons col-lg-10 justify-content-end">
-                                                            <a class="btn btn-next" href="#" role="button">Next Step <span>
-                                                                <svg class="img-fluid" width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <path d="M1.29006 9.87998L5.17006 5.99998L1.29006 2.11998C0.900059 1.72998 0.900059 1.09998 1.29006 0.70998C1.68006 0.31998 2.31006 0.31998 2.70006 0.70998L7.29006 5.29998C7.68006 5.68998 7.68006 6.31998 7.29006 6.70998L2.70006 11.3C2.31006 11.69 1.68006 11.69 1.29006 11.3C0.910059 10.91 0.900059 10.27 1.29006 9.87998Z" fill="black"/>
-                                                                </svg>
-                                                                </span>
-                                                            </a>
-                                                        </div>                            
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-lg-11">
+                                                            <div class="form-wizard-buttons justify-content-end">
+                                                                <a class="btn btn-next" href="#" role="button">Next Step <span>
+                                                                    <svg class="img-fluid" width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M1.29006 9.87998L5.17006 5.99998L1.29006 2.11998C0.900059 1.72998 0.900059 1.09998 1.29006 0.70998C1.68006 0.31998 2.31006 0.31998 2.70006 0.70998L7.29006 5.29998C7.68006 5.68998 7.68006 6.31998 7.29006 6.70998L2.70006 11.3C2.31006 11.69 1.68006 11.69 1.29006 11.3C0.910059 10.91 0.900059 10.27 1.29006 9.87998Z" fill="black"/>
+                                                                    </svg>
+                                                                    </span>
+                                                                </a>
+                                                            </div>    
+                                                        </div>
                                                     </div>  
+                                                                            
                                                 </fieldset>
 
                                             </div>
@@ -214,21 +219,21 @@
                                                 <fieldset>
                                                     <div class="form-group individual-msg mb-60">
                                                         <h4 class="title">Do you want to add individual message?</h4>
-                                                        <div class="gold-border">
-                                                            <label class="gold">
-                                                                <input type="radio" name="individual_msg" id="individualMsgYes" >
+                                                        
+                                                            <label class="gold-round-border">
+                                                                <input type="radio" name="individual_msg" id="individualMsgYes" onclick="myFunction()" >
                                                                 <span>Yes</span>
                                                             </label>
                                                             
-                                                            <label class="gold">
-                                                               <input type="radio" name="individual_msg" id="individualMsgNo" >
+                                                            <label class="gold-round-border">
+                                                               <input type="radio" name="individual_msg" id="individualMsgNo" onclick="myFunction()">
                                                                 <span> No </span>
                                                             </label>
 
-                                                        </div>
+                                                       
                                                     </div>
 
-                                                    <div class="row">
+                                                    <div class="row" id="show-content" style="display: none;">
                                                         <div class=" col-12">
                                                             <div class="yes-content">
                                                                 <h4 class="">Labelling only possible in combination with your own FrischSchoggi™. You will find already labelled FrischSchoggi™ hearts from our standard assortment in <span class="gold-text">  unserem Online Shop.</span></h4>
@@ -283,20 +288,20 @@
                                                 <fieldset>
                                                     <div class="form-group individual-msg mb-60">
                                                         <h4 class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat duis felis, sit. Id urna.</h4>
-                                                        <div class="gold-border">
+                                                        
 
-                                                            <label>
-                                                                <input type="radio" name="individual_msg" id="individualMsgYes" >
+                                                            <label class="gold-round-border">
+                                                                <input type="radio" name="individual_msg" id="individualMsgYes" onclick="myFunction()">
                                                                 <span>Delivery</span>
                                                             </label>
                                                             
-                                                            <label >
-                                                               <input type="radio" name="individual_msg" id="individualMsgNo" >
+                                                            <label class="gold-round-border">
+                                                               <input type="radio" name="individual_msg" id="individualMsgNo" onclick="myFunction()">
                                                                 <span> Pick-Up</span>
                                                             </label>
-                                                        </div>
+                                                        
                                                     </div>
-                                                    <div class="delivery content">
+                                                    <div id="delivery-content" style="display: none;">
                                                         <p>Please proceed to checkout to input your billing and shipping details for delivery.</p>
                                                     </div>
                                                     <div class="pickup-date-time mb-5">
@@ -521,6 +526,25 @@
     <script src="./bootstrap/js/bootstrap.min.js"></script>
     
 
-    
+    <script>
+        function myFunction(){
+            var x = document.getElementById("show-content")
+            if (x.style.display === "none") {
+                x.style.display = "block";
+                } else {
+                x.style.display = "none";
+                }
+            var y = document.getElementById("delivery-content")
+            if (y.style.display === "none") {
+                y.style.display = "block";
+                } else {
+                y.style.display = "none";
+                }
+           
+        }
+        
+        
+        
+    </script>
 </body>
 </html>
