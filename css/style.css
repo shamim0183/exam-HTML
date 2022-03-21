@@ -814,6 +814,7 @@ FOOTER SECTION END
     .price-contact{
         position: relative;
         margin-top: 25px;
+        top: 0;
         
     }
     .form-box {
